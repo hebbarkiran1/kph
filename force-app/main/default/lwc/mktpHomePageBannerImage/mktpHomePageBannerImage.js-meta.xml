@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>47.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="showforloggedinuser" type="Boolean" label="Show for logged in user" description="Show for logged in user."/>
+            <property name="shutterstockImage" type="String" label="Enter Banner Image Name" description="Home page Banner image name."/>
+            <property name="defaultImage" type="String" default="https://appxchange-developer-edition.na113.force.com/CiscoAppEx/sfsites/c/resource/1573033331000/CiscoBanner2" label="Default Banner Image Name" description="Home page Banner image name."/>
+        </targetConfig>
+        <targetConfig targets="lightning__AppPage">
+            <property name="showforloggedinuser" type="Boolean" default="true" label="Show for logged in user" description="Show for logged in user."/>
+            <property name="shutterstockImage" type="String" label="Enter Banner Image Name" description="Home page Banner image name."/>
+            <property name="defaultImage" type="String" default="https://app-market-place-dev-ed.lightning.force.com/resource/1573033331000/CiscoBanner2" label="Default Banner Image Name" description="Home page Banner image name."/>
+        </targetConfig>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="showforloggedinuser" type="Boolean" default="true" label="Show for logged in user" description="Show for logged in user."/>
+            <property name="shutterstockImage" type="String" label="Enter Banner Image Name" description="Home page Banner image name."/>
+            <property name="defaultImage" type="String" default="https://app-market-place-dev-ed.lightning.force.com/resource/1573033331000/CiscoBanner2" label="Default Banner Image Name" description="Home page Banner image name."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

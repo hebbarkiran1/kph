@@ -1,0 +1,131 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/customFileUploader": [
+                "customFileUploader/customFileUploader.js"
+            ],
+            "c/ldsUtils": [
+                "ldsUtils/ldsUtils.js"
+            ],
+            "c/lwcDemoComponent1": [
+                "lwcDemoComponent1/lwcDemoComponent1.js"
+            ],
+            "c/lwcDemoSession2Wire": [
+                "lwcDemoSession2Wire/lwcDemoSession2Wire.js"
+            ],
+            "c/lwcDemoSession2WireFunction": [
+                "lwcDemoSession2WireFunction/lwcDemoSession2WireFunction.js"
+            ],
+            "c/lwcDemoSession2WireImperative": [
+                "lwcDemoSession2WireImperative/lwcDemoSession2WireImperative.js"
+            ],
+            "c/lwcDemoSession3LDSRecordViewForm": [
+                "lwcDemoSession3LDSRecordViewForm/lwcDemoSession3LDSRecordViewForm.js"
+            ],
+            "c/lwcDemoSession3UIRecordAPI": [
+                "lwcDemoSession3UIRecordAPI/lwcDemoSession3UIRecordAPI.js"
+            ],
+            "c/mktpAppBannerHomePage": [
+                "mktpAppBannerHomePage/mktpAppBannerHomePage.js"
+            ],
+            "c/mktpAppFooterCmp": [
+                "mktpAppFooterCmp/mktpAppFooterCmp.js"
+            ],
+            "c/mktpAppLoginPageFooter": [
+                "mktpAppLoginPageFooter/mktpAppLoginPageFooter.js"
+            ],
+            "c/mktpBlankSpaceCmp": [
+                "mktpBlankSpaceCmp/mktpBlankSpaceCmp.js"
+            ],
+            "c/mktpCategoryItem": [
+                "mktpCategoryItem/mktpCategoryItem.js"
+            ],
+            "c/mktpCloneAppListingVersion": [
+                "mktpCloneAppListingVersion/mktpCloneAppListingVersion.js"
+            ],
+            "c/mktpCreateNewAppListingVersion": [
+                "mktpCreateNewAppListingVersion/mktpCreateNewAppListingVersion.js"
+            ],
+            "c/mktpErrorPanel": [
+                "mktpErrorPanel/mktpErrorPanel.js"
+            ],
+            "c/mktpHeaderContainer": [
+                "mktpHeaderContainer/mktpHeaderContainer.js"
+            ],
+            "c/mktpHomePageBannerImage": [
+                "mktpHomePageBannerImage/mktpHomePageBannerImage.js"
+            ],
+            "c/mktpLinksHomePage": [
+                "mktpLinksHomePage/mktpLinksHomePage.js"
+            ],
+            "c/mktpLinksNavigation": [
+                "mktpLinksNavigation/mktpLinksNavigation.js"
+            ],
+            "c/mktpListOfParentCategories": [
+                "mktpListOfParentCategories/mktpListOfParentCategories.js"
+            ],
+            "c/mktpMarketingContent": [
+                "mktpMarketingContent/mktpMarketingContent.js"
+            ],
+            "c/mktpNewApplications": [
+                "mktpNewApplications/mktpNewApplications.js"
+            ],
+            "c/mktpPublishedAppCard": [
+                "mktpPublishedAppCard/mktpPublishedAppCard.js"
+            ],
+            "c/mktpPublishedAppSearchFilters": [
+                "mktpPublishedAppSearchFilters/mktpPublishedAppSearchFilters.js"
+            ],
+            "c/mktpPublishedAppSearchResults": [
+                "mktpPublishedAppSearchResults/mktpPublishedAppSearchResults.js"
+            ],
+            "c/mktpPublishedAppSearchbox": [
+                "mktpPublishedAppSearchbox/mktpPublishedAppSearchbox.js"
+            ],
+            "c/mktpRecAppCard": [
+                "mktpRecAppCard/mktpRecAppCard.js"
+            ],
+            "c/mktpRecAppTile": [
+                "mktpRecAppTile/mktpRecAppTile.js"
+            ],
+            "c/mktpRecApplications": [
+                "mktpRecApplications/mktpRecApplications.js"
+            ],
+            "c/mktpRecommendedApps": [
+                "mktpRecommendedApps/mktpRecommendedApps.js"
+            ],
+            "c/mktplPublishedAppCard": [
+                "mktplPublishedAppCard/mktplPublishedAppCard.js"
+            ],
+            "c/newApplications": [
+                "newApplications/newApplications.js"
+            ],
+            "c/newApplicationsCard": [
+                "newApplicationsCard/newApplicationsCard.js"
+            ],
+            "c/newApplicationsTile": [
+                "newApplicationsTile/newApplicationsTile.js"
+            ],
+            "c/publishedAppSearchbox": [
+                "publishedAppSearchbox/publishedAppSearchbox.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/uploadContentComponent": [
+                "uploadContentComponent/uploadContentComponent.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

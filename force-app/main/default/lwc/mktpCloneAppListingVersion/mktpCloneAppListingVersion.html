@@ -1,0 +1,23 @@
+<template>
+    <template if:true={gatherNewVersion}>
+        <lightning-card>
+            <h3 slot="title">    Please Provide the New Version </h3>
+                <!-- Start of Body -->
+                <p class="slds-p-horizontal_small">  <lightning-input type="text" value={newVersion} onchange={handleChange} label="Enter New Version"></lightning-input></p>
+
+                
+           
+                <!-- End of Body-->
+            <!-- Start of Footer-->    
+            <div slot="footer">
+                <lightning-button label="Submit" title="Non-primary action" onclick={handleSubmit} class="slds-m-left_x-small"></lightning-button>
+                <lightning-button label="Cancel" title="Non-primary action" onclick={handleCancel} class="slds-m-left_x-small"></lightning-button>
+            </div>
+
+        </lightning-card>
+    </template>
+    <!--Error Panel to be displayed only in case of error -->
+    <template if:true={error}>
+        <c-mktp-error-panel errors={error}></c-mktp-error-panel>
+    </template>
+</template>

@@ -1,0 +1,46 @@
+.c-container {
+    background: #0d274d;
+    margin: 10px 0 20px 0;
+}
+.page-section {
+    padding: 1rem;
+}
+.page-header,
+.page-footer {
+    height: 50px;
+    text-align: center;
+}
+li > a {
+    color: #fff;
+    font-size: 1rem;
+    font-family: Arial,sans-serif;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+li{
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: Arial,sans-serif;
+}
+.page-section>ul>li{
+    margin: 10px 0;
+}
+
+ul{
+    list-style: none;
+}
+.footerUl li{
+    display: inline;
+    margin: 10px;
+    font-size: 0.6rem;
+}
+.footerBar{
+    text-align: center;
+}
+
+.followus li{
+    display: inline;
+    margin: 10px;
+    font-size: 0.6rem;
+}

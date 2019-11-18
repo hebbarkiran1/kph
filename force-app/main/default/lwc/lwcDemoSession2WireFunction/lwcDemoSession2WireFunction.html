@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title = "Demo Session 2 Wired Function" icon-name = "custom:custom63">
+        <div>
+            <template if:true = {publishedApp}>
+                <template for:each={publishedApp} for:item="apps">
+                    <p key={apps.Id}> {apps.Name}, {apps.GCPhase1__AppName__c} , {apps.GCPhase1__AppListing__c}, {apps.GCPhase1__TagLine__c}</p>
+                </template>
+            </template>
+            <template if:true = {error}>
+              
+
+              
+
+            </template>
+        </div>
+    </lightning-card>
+</template>

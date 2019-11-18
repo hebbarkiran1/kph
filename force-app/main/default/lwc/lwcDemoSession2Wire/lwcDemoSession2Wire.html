@@ -1,0 +1,15 @@
+<template>
+        <lightning-card title="Demo Session 2 Wire a property" icon-name="custom:custom63">
+            <div class="slds-m-around_medium">
+                <template if:true={publishedApps.data}>
+                    <template for:each={publishedApps.data} for:item="apps">
+                        <p key={apps.appId}>{apps.cardTitle}</p>
+                    </template>
+                </template>
+                <!-- Error Section-->    
+                <template if:true={publishedApps.error}>
+                   
+                </template>
+            </div>
+        </lightning-card>    
+</template>

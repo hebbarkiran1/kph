@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Demo Session 2 - Wire Imperative" icon-name="">
+        <div class="slds-m-around_medium">
+                <p class="slds-m-bottom_small">
+                    <lightning-button label="Load App Listing Version" onclick={handleLoad}></lightning-button>
+                </p>
+            <template if:true={appListingVersion}>
+                <template for:each={appListingVersion} for:item="apps">
+                    <p key={apps.Id}>{apps.Name} , {apps.GCPhase1__AppName__c} , {apps.GCPhase1__AppListing__c}, {apps.GCPhase1__TagLine__c}</p>
+                </template>
+            </template>
+            <template if:true={error}>
+               
+            </template>
+        </div>
+    </lightning-card>
+</template>

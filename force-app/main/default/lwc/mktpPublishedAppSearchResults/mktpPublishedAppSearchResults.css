@@ -1,0 +1,83 @@
+/* CARD */
+
+.cisco-app-listing-card{
+    /* Add shadows to create the "card" effect */
+  
+    width: 100%;
+    border-radius:4px;
+    border:none;
+  }
+
+  
+  .cisco-app-listing-card_no-border{
+    /* Add shadows to create the "card" effect */
+    width: 100%;
+    border-radius:4px;
+    border:none;
+  }
+  
+  .cisco-app-listing-card__header{
+    align-items:center;
+  }
+  
+  
+  /* On mouse-over, add a deeper shadow */
+  /* cisco-tile:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  } */
+  
+  /* Add some padding inside the card container */
+  
+  .cisco-app-listing-card__header{
+    align-items: center;
+  }
+  
+  .cisco-app-listing-card__header-title a{
+    font-weight: bold;
+    display: block;
+    color:black;
+    text-decoration: none;
+  }
+  
+  .cisco-app-listing-card__header-title{
+    flex: 1;
+      min-width: 0;
+  }
+  
+
+  .cisco-app-listing-card__button-link button {
+    position: relative;
+      display: inline-flex;
+      align-items: center;
+      padding: 0;
+      background: transparent;
+      background-clip: border-box;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      line-height: 1.875rem;
+      text-decoration: none;
+      color: #0398BF;
+      -webkit-appearance: none;
+      white-space: normal;
+      user-select: none;
+  
+  }
+  
+  .cisco-app-listing-card__button-link button:hover {
+    position: relative;
+      display: inline-flex;
+      align-items: center;
+      padding: 0;
+      background: transparent;
+      background-clip: border-box;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      line-height: 1.875rem;
+      text-decoration: underline;
+      color: #0398BF;
+      -webkit-appearance: none;
+      white-space: normal;
+      user-select: none;
+  
+  
+  }

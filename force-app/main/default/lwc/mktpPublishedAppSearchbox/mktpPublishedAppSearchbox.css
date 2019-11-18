@@ -1,0 +1,44 @@
+.slds-lookup__menu :after,.slds-lookup__menu:before {
+    box-sizing: border-box;
+}
+
+.show .slds-lookup__menu {
+    z-index: 100;
+    display: block;
+    transition-delay: .1s;
+    overflow: auto;
+}
+
+.cisco-appx__search .cisco-layoutItem
+{
+    position: relative;
+    z-index: 100;
+}
+
+.slds-lookup__menu {
+    background: #fdfdfd;
+    border: 1px solid #d8dde6;
+    border-radius: .25rem;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    padding: .5rem 0;
+    overflow: auto;
+    transition-delay: .1s;
+    display: block;
+}
+.cisco-app-lookup-backdrop:after{
+    top: 0;
+    content: ' ';
+    transition-duration: .1s;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: static;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(126,140,153,0.8);
+    z-index: 50;
+    display: block;  
+}

@@ -1,0 +1,12 @@
+.cisco-app-card { background:white; width: 20%; box-shadow: 0ch;display: flex;}
+.cisco-app-card_thumbnail-image { background: url(‘ghasd.jpeg’);width: 100%;}
+.cisco-app-card_thumbnail-image { background: url(‘ghasd.jpeg’);width: 100%;}
+.cisco-app-card__header  {font-size: 0.75rem;}
+.cisco-app-card__title{font-size: 0.875rem}
+.cisco-app-card__subtitle{font-size: 0.75rem}
+.cisco-app-card__description{font-size: 0.875rem}
+.cisco-app-card__description-text{font-size: 0.75rem}
+.cisco-app-card__related-detail {font-size: 0.75rem}
+.cisco-app-card__related-detail-content{font-size: 0.75rem}
+.cisco-app-card__button-area{font-size: 0.75rem}
+.cisco-app-card__button{font-size: 0.75rem}

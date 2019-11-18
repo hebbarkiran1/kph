@@ -1,0 +1,66 @@
+.THIS .contentPanel:before,
+.THIS .contentPanel:after {
+    content: " ";
+    display: table;
+}
+.THIS .tabPanel:before,
+.THIS .tabPanel:after {
+    content: " ";
+    display: table;
+}
+.THIS .footerPanel:before,
+.THIS .footerPanel:after {
+    content: " ";
+    display: table;
+}
+.THIS .contentPanel:after {
+    clear: both;
+}
+.THIS .tabPanel:after {
+    clear: both;
+}
+.THIS .footerPanel:after {
+    clear: both;
+}
+
+.THIS .headerPanel {
+    width: 100%;
+    /*height: 20%;*/
+}
+.THIS .searchBoxPanel {
+    width: 100%;
+    height: 20%;
+}
+.THIS .left {
+    float: left;
+    width: 20%;
+   
+}
+.THIS .right {
+    float: right;
+    width: 80%;
+   
+}
+.THIS .button {
+    float:left;
+    width: 33.33%;
+    
+}
+.THIS .article1 {
+    float: left;
+    width: 50%;
+    
+    
+}
+
+.THIS .article2 {
+    float: left;
+    width: 50%;
+    
+    
+}
+
+.THIS .footerPanel {
+    width: 100%;
+    /*height: 20%;*/
+}

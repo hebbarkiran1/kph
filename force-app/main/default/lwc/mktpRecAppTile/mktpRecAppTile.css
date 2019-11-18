@@ -1,0 +1,80 @@
+/* TILE */
+
+.cisco-app-tile{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 200px;
+    border-radius:4px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  ./* cisco-tile:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  } */
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 0.5rem;
+  }
+  
+  .cisco-app-tile__header{
+  }
+  
+  .cisco-app-tile__title {
+    font-weight: bold;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .cisco-app-tile__thumbnail-image{
+    width:100%;
+    border-radius:5px 5px 0px 0px;
+  }
+  
+  
+  
+  .cisco-hide{
+    display: none;
+  }
+  
+  .cisco-show{
+    display: block;
+  }
+  
+  
+  
+  
+  
+  .cisco-app-tile__subtitle_label{
+    font-weight: 500;
+    display: inline;
+    color:grey;
+  
+  }
+  
+  .cisco-app-tile__subtitle_link a{
+    color:#0398BF;
+    text-decoration:none;
+  }
+  
+  .cisco-app-tile__footer button{
+    border: 1px solid #00BCEB;
+    border-radius:50px;
+    color:#0398BF;
+    background-color: white;
+    width:px;
+    padding: .5rem 1rem .5rem 1rem;
+  }
+  
+  .cisco-app-tile__footer button:hover{
+    border: 1px solid #00BCEB;
+    background:#00BCEB;
+    color:white;
+    transition: .2s;
+    border-radius:50px;
+    width:px;
+    padding: .5rem 1rem .5rem 1rem;
+  }

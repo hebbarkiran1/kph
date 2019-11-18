@@ -1,0 +1,25 @@
+.app-tile:hover .slds-card {
+    background-color: #f5ebe1;
+}
+
+.app-tile .slds-card {
+    background-color: #fbf6f0;
+    transition: border 0.5s, background-color 0.5s;
+    box-shadow: 0 0 1px black;
+    height: 180px;
+}
+
+.app-tile .slds-card__header
+{
+    display: none;
+}
+
+.app-tile-button {
+    fill: #2d5319;
+}
+.cisco-app-card .slds-card { 
+    background:white; 
+    width: 20%; 
+    box-shadow:burlywood; 
+    display:flex;
+}

@@ -1,0 +1,449 @@
+.cisco-grid {
+    display: flex;
+  }
+  
+  .cisco-col {
+    display: inline-flex;
+  }
+  
+  body{
+    font-family:sans-serif;
+  }
+  
+  
+  
+  .cisco-hide{
+    display: none;
+  }
+  
+  .cisco-show{
+    display: block;
+  }
+  
+  
+  .cisco-size_1-of-12 {
+    width: 8.33333%;
+  }
+  
+  .cisco-size_2-of-12 {
+    width: 16.66667%;
+  }
+  
+  .cisco-size_3-of-12 {
+    width: 25%;
+  }
+  
+  .cisco-size_4-of-12 {
+    width: 33.33333%;
+  }
+  
+  .cisco-size_5-of-12 {
+    width: 41.66667%;
+  }
+  
+  .cisco-size_6-of-12 {
+    width: 50%;
+  }
+  
+  .cisco-size_7-of-12 {
+    width: 58.33333%;
+  }
+  
+  .cisco-size_8-of-12,
+  .cisco-size_2-of-3 {
+    width: 66.66667%;
+  }
+  
+  .cisco-size_9-of-12 {
+    width: 75%;
+  }
+  
+  .cisco-size_10-of-12 {
+    width: 83.33333%;
+  }
+  
+  .cisco-size_11-of-12 {
+    width: 91.66667%;
+  }
+  
+  .cisco-size_12-of-12 {
+    width: 100%;
+  }
+  
+  .cisco-gutters {
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+  }
+  
+  /*----------------------------------------------------
+  PADDING*/
+  
+  .cisco-p-around_small {
+    padding-top: 0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .cisco-p-around_x-small {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .cisco-p-around_xx-small {
+    padding-top: 0.25rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  
+  .cisco-p-horizontal_small {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  .cisco-p-horizontal_x-small {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .cisco-p-horizontal_xx-small {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  
+  .cisco-p-vertical_small {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .cisco-p-vertical_x-small {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .cisco-p-vertical_xx-small {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  
+  .cisco-p-top_small {
+    padding-top: 0.75rem;
+  }
+  
+  .cisco-p-bottom_small {
+    padding-bottom: 0.75rem;
+  }
+  
+  .cisco-p-left_small {
+    padding-left: 0.75rem;
+  }
+  
+  .cisco-p-right_small {
+    padding-right: 0.75rem;
+  }
+  
+  .cisco-p-top_x-small {
+    padding-top: 0.5rem;
+  }
+  
+  .cisco-p-bottom_x-small {
+    padding-bottom: 0.5rem;
+  }
+  
+  .cisco-p-left_x-small {
+    padding-left: 0.5rem;
+  }
+  
+  .cisco-p-right_x-small {
+    padding-right: 0.5rem;
+  }
+  
+  .cisco-p-top_xx-small {
+    padding-top: 0.25rem;
+  }
+  
+  .cisco-p-bottom_xx-small {
+    padding-bottom: 0.25rem;
+  }
+  
+  .cisco-p-left_xx-small {
+    padding-left: 0.25rem;
+  }
+  
+  .cisco-p-right_xx-small {
+    padding-right: 0.25rem;
+  }
+  
+  /*---------------------------------------------------------------------------------
+  MARGIN*/
+  
+  .cisco-m-around_small {
+    margin-top: 0.75rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .cisco-m-around_x-small {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cisco-m-around_xx-small {
+    margin-top: 0.25rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .cisco-m-horizontal_small {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+  
+  .cisco-m-horizontal_x-small {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .cisco-m-horizontal_xx-small {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  
+  .cisco-m-vertical_small {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .cisco-m-vertical_x-small {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cisco-m-vertical_xx-small {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .cisco-m-top_small {
+    margin-top: 0.75rem;
+  }
+  
+  .cisco-m-bottom_small {
+    margin-bottom: 0.75rem;
+  }
+  
+  .cisco-m-left_small {
+    margin-left: 0.75rem;
+  }
+  
+  .cisco-m-right_small {
+    margin-right: 0.75rem;
+  }
+  
+  .cisco-m-top_x-small {
+    margin-top: 0.5rem;
+  }
+  
+  .cisco-m-bottom_x-small {
+    margin-bottom: 0.5rem;
+  }
+  
+  .cisco-m-left_x-small {
+    margin-left: 0.5rem;
+  }
+  
+  .cisco-m-right_x-small {
+    margin-right: 0.5rem;
+  }
+  
+  .cisco-m-top_xx-small {
+    margin-top: 0.25rem;
+  }
+  
+  .cisco-m-bottom_xx-small {
+    margin-bottom: 0.25rem;
+  }
+  
+  .cisco-m-left_xx-small {
+    margin-left: 0.25rem;
+  }
+  
+  .cisco-m-right_xx-small {
+    margin-right: 0.25rem;
+  }
+  
+  /*------------------------------------------------------------------------------------
+  FONT_SIZE*/
+  .cisco-text-size_large {
+    font-size: 0.875rem;
+  }
+  
+  .cisco-text-size_medium {
+    font-size: 0.75rem;
+  }
+  
+  .cisco-text-size_small {
+    font-size: 0.6875rem;
+  }
+  
+  
+  /* TILE */
+  
+  .cisco-app-tile{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 200px;
+    border-radius:4px;
+  }
+  
+  
+  .container {
+    padding: 0.5rem;
+  }
+  
+  .cisco-app-tile__header{
+  }
+  
+  .cisco-app-tile__title {
+    font-weight: bold;
+    display: block;
+  }
+  
+  .cisco-app-tile__thumbnail-image{
+    width:100%;
+    border-radius:5px 5px 0px 0px;
+  }
+  
+  
+  
+  .cisco-hide{
+    display: none;
+  }
+  
+  .cisco-show{
+    display: block;
+  }
+  
+  
+  
+  
+  
+  .cisco-app-tile__subtitle_label{
+    ont-weight: 500;
+    display: inline;
+    color:grey;
+  
+  }
+  
+  .cisco-app-tile__subtitle_link a{
+    color:#0398BF;
+    text-decoration:none;
+  }
+  
+  .cisco-app-tile__footer button{
+    border: 1px solid #00BCEB;
+    border-radius:50px;
+    color:#0398BF;
+    background-color: white;
+    width:px;
+    padding: .5rem 1rem .5rem 1rem;
+  }
+  
+  .cisco-app-tile__footer button:hover{
+    border: 1px solid #00BCEB;
+    background:#00BCEB;
+    color:white;
+    transition: .2s;
+    border-radius:50px;
+    width:px;
+    padding: .5rem 1rem .5rem 1rem;
+  }
+  
+  
+  /* CARD */
+  
+  .cisco-app-listing-card{
+    /* Add shadows to create the "card" effect */
+  
+    width: 100%;
+    border-radius:4px;
+    border:1px solid lightgrey;
+  }
+  
+  
+  
+  
+  .cisco-app-listing-card_no-border{
+    /* Add shadows to create the "card" effect */
+    width: 100%;
+    border-radius:4px;
+    border:none;
+  }
+  
+  .cisco-app-listing-card__header{
+    align-items:center;
+  }
+  
+  
+  
+  
+  .cisco-app-listing-card__header{
+    align-items: center;
+  }
+  
+  .cisco-app-listing-card__header-title a{
+    font-weight: bold;
+    display: block;
+    color:black;
+    text-decoration: none;
+  }
+  
+  .cisco-app-listing-card__header-title{
+    flex: 1;
+      min-width: 0;
+  }
+  
+  
+  
+  .cisco-app-listing-card__button-link button {
+    position: relative;
+      display: inline-flex;
+      align-items: center;
+      padding: 0;
+      background: transparent;
+      background-clip: border-box;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      line-height: 1.875rem;
+      text-decoration: none;
+      color: #0398BF;
+      -webkit-appearance: none;
+      white-space: normal;
+      user-select: none;
+  
+  }
+  
+  .cisco-app-listing-card__button-link button:hover {
+    position: relative;
+      display: inline-flex;
+      align-items: center;
+      padding: 0;
+      background: transparent;
+      background-clip: border-box;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      line-height: 1.875rem;
+      text-decoration: underline;
+      color:#0398BF;
+      -webkit-appearance: none;
+      white-space: normal;
+      user-select: none;
+  }

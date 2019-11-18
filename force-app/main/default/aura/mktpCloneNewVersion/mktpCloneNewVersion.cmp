@@ -1,0 +1,9 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickAction,flexipage:availableForAllPageTypes" access="global">
+    <!-- SM: 07-Nov-2019-->
+    <!-- Created this Aura Component to call the LWC component from quick action and pass the recordId to it as a parameter-->
+    <aura:attribute name="recdid" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <!-- passing the recordId as a property to the LWC component-->
+    <c:mktpCloneAppListingVersion recdid="{!v.recdid}"></c:mktpCloneAppListingVersion>
+</aura:component>

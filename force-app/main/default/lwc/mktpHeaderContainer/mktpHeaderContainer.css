@@ -1,0 +1,14 @@
+.imgStyle{
+    height: 30px !important;
+}
+.align-left{
+    text-align: right !important;
+}
+.userStyle{
+    text-align: center;
+    font-size: 0.75rem;
+    color: #2574a9;
+    font-weight: bold;
+    padding-right: 10px;
+    text-decoration: none;
+}

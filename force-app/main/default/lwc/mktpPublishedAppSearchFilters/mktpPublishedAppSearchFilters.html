@@ -1,0 +1,35 @@
+<template>
+        <div class="slds-card__body_inner custom-box slds-box">
+    
+            <h1 class="slds-text-heading_small"> Refine By:</h1>
+            <lightning-layout multiple-rows="true">
+    
+                <lightning-layout-item  padding="around-small" class="slds-align_left"  size="12">   
+                     <lightning-button variant="Neutral" label="RESET" title="Reset all Fitlers" onclick={handleResetSelection} class="slds-m-left_x-small"></lightning-button>
+                        <lightning-button variant="brand" label="Apply filters" title="Apply selected fitlers" onclick={handleSelectionfromButton} class="slds-m-left_x-small"></lightning-button>
+                </lightning-layout-item>
+     
+                <template if:true={filterMap}>
+                            <lightning-layout-item padding="around-small" size="12">
+    
+                        <template for:each={filterMap} for:item="filterKey">
+                            
+                                <!-- <label class="slds-form-element__label" for="record-types">Age</label> -->
+                                <label class="slds-form-element__label slds-text-align_left slds-text-title_bold slds-p-top_x-large" key={filterKey.key} for={filterKey.key}>{filterKey.key}</label>
+                                <template for:each={filterKey.value} for:item="val">
+                                <lightning-input type="checkbox" name={filterKey.key} value={val} label={val} key={val} onchange={handleSelection}></lightning-input>
+                                </template>
+                        </template>
+                    </lightning-layout-item>
+    
+                </template>
+            </lightning-layout>
+            <template if:true={errorMsg}>
+                    <div class="slds-text-color_error">
+                            <label class="slds-form-element__label slds-text-color_error" >{errorMsg}</label>                    
+                   </div>
+            </template>
+        </div>
+    
+    
+    </template>

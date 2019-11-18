@@ -1,0 +1,56 @@
+<template>
+
+    <div class="cisco-app-listing-card">
+      <div class="cisco-app-listing-card__header cisco-grid cisco-p-around_small  ">
+        <span class="cisco-app-listing-card__header-title cisco-text-size_large">
+          <a href="javascript:void(0);" class="cisco-app-listing-card__header-link cisco-truncate"
+            title="Top Recommended Applications">
+            <span>Top Recommended Applications</span>
+          </a>
+        </span>
+        <div class="cisco-no-flex cisco-app-listing-card__button-link">
+          <lightning-button label="View All"></lightning-button>
+        </div>
+      </div>
+      <div class="slds-grid slds-gutters slds-var-p-around_medium" style="background-color: rgb(255, 255, 255);">
+  
+        <template for:each={temp} for:item="apps">
+          <div class="slds-col" key={index}>
+  
+            <div class="cisco-app-listing-card__body">
+              <div class="cisco-p-horizontal_small cisco-m-bottom_small cisco-p-bottom_small ">
+                <div class="cisco-app-tile">
+                  <img class="cisco-app-tile__thumbnail-image" src={Image} alt="Avatar" />
+                  <div
+                    class="cisco-app-tile__header cisco-p-horizontal_xx-small cisco-p-vertical_xx-small cisco-m-top_xx-small cisco-m-horizontal_x-small">
+                    <span class="cisco-app-tile__title cisco-text-size_large ">Cisco Physical Access Manager 1.5.3 OVA
+                      image</span>
+                    <span class="cisco-app-tile__subtitle_label cisco-m-top_x-small cisco-text-size_medium ">by </span>
+                    <span class="cisco-app-tile__subtitle_link cisco-m-top_x-small cisco-text-size_medium "><a
+                        href="">Cisco</a></span>
+                  </div>
+  
+                  <div class="cisco-app-tile__body cisco-p-vertical_small cisco-m-horizontal_x-small">
+                    <article
+                      class="cisco-app-tile__description cisco-text-size_medium cisco-text-size_medium cisco-m-horizontal_xx-small">
+                      Cisco's fixed and modular, core, distribution, and access switc..
+                    </article>
+                    <div class=" cisco-hide cisco-app-tile__related-info cisco-text-size_medium cisco-m-top_small">
+                      <span>FREE</span>
+                      <span></span>
+                      <span>2123</span>
+                    </div>
+                  </div>
+                  <div class="cisco-show cisco-app-tile__footer cisco-p-vertical_small cisco-m-horizontal_x-small">
+                    <lightning-button label="Demo"></lightning-button> 
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </template>
+  
+      </div>
+    </div>
+  </template>

@@ -1,0 +1,36 @@
+<template>
+  <div class="cisco-app-tile">
+    <template if:true={fetchedNewApps.AppLogo__c}>
+      <img class="cisco-app-tile__thumbnail-image" src={fetchedNewApps.AppLogo__c} alt="Avatar" />
+    </template>
+    <template if:false={fetchedNewApps.AppLogo__c}>
+      <img class="cisco-app-tile__thumbnail-image" src={appLogo} alt="Avatar" />
+    </template>
+
+    <div
+      class="cisco-app-tile__header cisco-p-horizontal_xx-small cisco-p-vertical_xx-small cisco-m-top_xx-small cisco-m-horizontal_x-small">
+      <a onclick={handleOpenRecordClick} class="cisco-app-tile__title cisco-text-size_large ">app.Name</a>
+      <span class="cisco-app-tile__subtitle_label cisco-m-top_x-small cisco-text-size_medium ">by </span>
+      <span class="cisco-app-tile__subtitle_link cisco-m-top_x-small cisco-text-size_medium "><a
+          href="">Cisco</a></span>
+    </div>
+
+    <div class="cisco-app-tile__body cisco-p-vertical_small cisco-m-horizontal_x-small">
+      <article
+        class=" cisco-app-tile__description cisco-text-size_medium cisco-text-size_medium cisco-m-horizontal_xx-small">
+        app.Supported_OS__c </article>
+      <div class=" cisco-app-tile__related-info cisco-text-size_medium cisco-m-top_small">
+        <span class=""></span>
+        <span>FREE</span>
+        <span>PAID</span>
+        <span>Free Trial Available</span>
+
+      </div>
+    </div>
+
+    <div class="cisco-show cisco-app-tile__footer cisco-p-vertical_small cisco-m-horizontal_x-small">
+      <button type="button">Demo</button>
+    </div>
+  </div>
+
+</template>

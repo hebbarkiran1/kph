@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Marketing Content" icon-name="custom:custom63">
+
+            <div class="slds-m-around_medium">
+                <template if:true={content.data}>
+                    <lightning-datatable
+                        key-field="Id"
+                        data={content.data}
+                        columns={columns}
+                        onsave={handleSave}
+                        draft-values={draftValues}>
+                    </lightning-datatable>
+                </template>
+                <template if:true={content.error}>
+                    <!-- handle Apex error -->
+                </template>
+            </div>
+    </lightning-card>
+    
+</template>

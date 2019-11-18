@@ -1,0 +1,35 @@
+<template>
+
+    <div class="cisco-app-listing-card">
+        <div class="cisco-app-listing-card__header cisco-grid cisco-p-around_small  ">
+            <span class="cisco-app-listing-card__header-title cisco-text-size_large">
+                <a href="javascript:void(0);" class="cisco-app-listing-card__header-link cisco-truncate"
+                    title="Recommended Applications">
+                    <span>Top Recommended Applications</span>
+                </a>
+            </span>
+            <div class="cisco-no-flex cisco-app-listing-card__button-link">
+                <lightning-button label="View All"></lightning-button>
+            </div>
+        </div>
+
+
+
+        <lightning-layout>
+
+
+            <lightning-layout-item  padding="around_xx-small" size="12">
+                <lightning-layout multiple-rows="true" class="cisco-app-listing-card__body ">
+                    <template for:each={recApps.data} for:item="app">
+                        <lightning-layout-item key={app.Name}
+                            class="cisco-p-horizontal_small cisco-m-bottom_small cisco-p-bottom_small cisco-m-bottom_small">
+                            <!-- Start app tile -->
+                            <c-mktp-rec-app-tile temp={app}></c-mktp-rec-app-tile>
+                            <!-- End app tile -->
+                        </lightning-layout-item>
+                    </template>
+                </lightning-layout>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>

@@ -1,0 +1,42 @@
+<template>
+        <!-- Start app list -->
+     <template if:false={hasResults}>
+         <div class="slds-align_absolute-center slds-m-vertical_small">
+             No Results, Try searching again with something different
+         </div>
+     </template>
+                         <!-- Data failed to load -->
+
+     <template if:true={errorMsg}>
+        <div class="slds-text-color_error">
+                 <label class="slds-form-element__label slds-text-color_error" >{errorMsg}</label>                    
+        </div>
+     </template>
+
+     <template if:true={apps}>
+
+         <lightning-layout>
+                 <!-- <lightning-layout-item padding="around-small" size="4">
+                         
+                         <c-app-filters></c-app-filters>
+                       
+                 </lightning-layout-item> -->
+                 
+                 <lightning-layout-item class="cisco-app-listing-card" padding="around_xx-small" size="12">
+                     <lightning-layout multiple-rows="true" class="cisco-app-listing-card__body">
+                         <template for:each={apps} for:item="app">
+                             <lightning-layout-item key={app} class="cisco-p-horizontal_small cisco-m-bottom_small cisco-p-bottom_small">
+                             <!-- Start app tile -->
+                                 <c-mktp-published-app-card app={app} onappview={handleAppView}></c-mktp-published-app-card>
+                             <!-- End app tile -->
+                         </lightning-layout-item>
+
+                         </template>
+                     </lightning-layout>
+             </lightning-layout-item>
+         </lightning-layout>
+     </template>
+     
+ <!-- End app list -->
+
+</template>

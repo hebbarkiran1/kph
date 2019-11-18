@@ -1,0 +1,19 @@
+<template>
+<div>
+    <lightning-layout multiple-rows="false">
+        <lightning-layout-item class="cisco-header_logo" size="2">
+           <img src={appResources.ciscoLogo} onclick={handleLogoClick} class="imgStyle"/>     
+        </lightning-layout-item>
+        <lightning-layout-item class="cisco-header_searchbox" size="8">
+            <c-mktp-published-app-searchbox host-page={pageName} page-name={pageName}></c-mktp-published-app-searchbox>        
+        </lightning-layout-item>
+        <!--lightning-layout-item class="cisco-header_favorites" size="2">
+                <img src={appResources.ciscoFavorites} onclick={handleFavClick} />     
+        </lightning-layout-item-->
+        <lightning-layout-item class="cisco-header_profile align-left" size="2">
+            <!-- <img src={appResources.ciscoProfile} onclick={handleProflieClick} class="imgStyle"/>      -->
+            <a href={userId} class="userStyle" target="_blank"> {name} &nbsp;&nbsp;<lightning-avatar variant="circle"  src={smallphoto} initials={name} fallback-icon-name="standard:avatar"  alternative-text={name} class="slds-m-right_small"></lightning-avatar></a>
+        </lightning-layout-item>
+    </lightning-layout>
+</div>
+</template>

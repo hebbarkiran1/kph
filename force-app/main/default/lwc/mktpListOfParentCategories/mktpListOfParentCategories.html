@@ -1,0 +1,23 @@
+<template>
+    <div class="cisco-vertical-search-listing-card">
+        <div class="cisco-app-listing-card__body">
+            <div class="cisco-p-horizontal_xxx-small cisco-m-bottom_small cisco-p-bottom_small ">
+                <span class="cisco-vertical-search-option-name cisco-m-bottom_small cisco-p-left_xx-small cisco-m-horizontal_small cisco-text-size_medium">CATEGORIES</span>
+                    <div class="cisco-app-tile__body cisco-p-bottom_small cisco-m-horizontal_small">
+                        <template if:true={parentCategories.data}>
+                            <ul>
+                                <template for:each={parentCategories.data} for:item="cat">
+                                    <li key={cat.Id} class="cisco-app-tile__description cisco-text-size_medium cisco-text-size_medium cisco-m-horizontal_xx-small cisco-m-vertical_x-small"><c-mktp-category-item category={cat}></c-mktp-category-item></li>
+                                </template>
+                                    <li class="cisco-app-tile__description cisco-text-size_medium cisco-text-size_medium cisco-m-horizontal_xx-small cisco-m-vertical_x-small slds=float_right" style="float:right"><a href="">View More....</a></li>
+                            </ul>
+                              
+                            </template>
+                            <template if:true={parentCategories.error}>
+                                <c-mktp-error-panel errors={parentCategories.error}></c-mktp-error-panel>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</template>

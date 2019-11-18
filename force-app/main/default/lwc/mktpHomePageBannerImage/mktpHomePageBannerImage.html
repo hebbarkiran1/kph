@@ -1,0 +1,24 @@
+<template>
+        <template if:true={showforloggedinuser}>
+                        
+                   <div>
+                        <img src={shutterstockImage}/>
+                   </div>
+               
+        </template>
+        <template if:false={showforloggedinuser}>
+               
+                   <div>
+                        <img src={defaultImage}/>
+                   </div>
+        </template>
+        <template if:true={imgDetails.data}>
+                        <template for:each={imgDetails.data} for:item="wrapper">
+                            <p key={wrapper.sitePathPrefix}>path  {wrapper.sitePathPrefix}
+                                        user  {wrapper.isUserLoggedIn}           
+                            </p>
+            
+                        </template>
+                        </template>
+      
+</template>

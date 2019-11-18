@@ -1,0 +1,57 @@
+<template>
+
+
+    
+    <lightning-layout multiple-rows="true" class="cisco-appx__search" pull-to-boundary="around-small">
+        <lightning-layout-item class="cisco-layoutItem" size="9">
+            
+            <lightning-input type="search"
+            id="appSearch"
+            variant="label-hidden"
+            aria-autocomplete="list"
+            aria-haspopup="true"
+            keepfocusonnavigate="true"
+            class="cisco-appx-searchbox"
+            autocomplete="off" 
+            label="Search"
+            onkeyup={handleKeyUp}
+            onkeydown={handleKeyDown}
+            onfocus={handleFocus}
+            placeholder="Search for apps"
+            value={searchTerm}>
+            </lightning-input>
+
+            <!-- <lightning-button padding="around-small" label="Search" 
+                    variant="brand" onclick={handleSearch}></lightning-button> -->
+                    <template if:true={searchFired}>
+        <template if:true={apps}>
+                <div class="slds-lookup__menu appx-lookup__menu" id="global_search_list_01" role="listbox">
+                <ul aria-label="Search Suggestions" class="slds-lookup__list" id="global_search_list_01_ul" role="group">
+                    <template for:each={apps} for:item="app" >
+                    <li role="presentation"  key={app}>
+                        <a role="option" tabindex="-1" data-i="0" onclick={handleSelection} class="slds-lookup__item-action slds-media slds-media_center">
+                            <img src={appResources.searchLogo} />
+                            <span class="slds-media__body">
+                                <span class="slds-lookup__result-text">
+                                    <template if:true={app.appTitle}>{app.appTitle}</template>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </template>
+                </ul>
+            </div>
+        </template>
+        <template if:false={hasResults}>
+                <div class="slds-lookup__menu appx-lookup__menu" role="listbox">
+                    No search results have been found
+                </div>
+        </template>
+        <template if:true={errorMsg}><div class="slds-lookup__menu appx-lookup__menu" role="listbox">
+                System Error: {errorMsg}
+            </div></template>
+        </template>
+        </lightning-layout-item>
+    </lightning-layout>
+
+</template>

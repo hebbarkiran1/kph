@@ -1,0 +1,40 @@
+<template>
+
+        <div class="cisco-app-listing-card">
+            <div class="cisco-app-listing-card__header cisco-grid cisco-p-around_small  ">
+                <span class="cisco-app-listing-card__header-title cisco-text-size_large">
+                    <a href="javascript:void(0);" class="cisco-app-listing-card__header-link cisco-truncate"
+                        title="Recommended Applications">
+                        <span>New Applications</span>
+                    </a>
+                </span>
+                <div class="cisco-no-flex cisco-app-listing-card__button-link">
+                    <a>View All
+                        <lightning-icon icon-name="utility:right" alternative-text="View All" size="x-small"></lightning-icon>
+
+                    </a>
+                </div>
+            </div>
+    
+    
+    
+            <lightning-layout >
+    
+    
+                <lightning-layout-item  padding="around_xx-small" size="12">
+                    <lightning-layout multiple-rows="true" class="cisco-app-listing-card__body ">
+                        <template for:each={apps.data} for:item="app">
+                            <lightning-layout-item key={app.name}
+                                class="cisco-p-horizontal_small cisco-m-bottom_small cisco-p-bottom_small cisco-m-bottom_small">
+                                <!-- Start app tile -->
+                                <c-mktp-published-app-card app={app}></c-mktp-published-app-card>
+                                <!-- End app tile -->
+                            </lightning-layout-item>
+    
+
+                        </template>
+                    </lightning-layout>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>

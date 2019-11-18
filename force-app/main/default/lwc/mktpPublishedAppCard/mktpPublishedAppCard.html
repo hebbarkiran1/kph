@@ -1,0 +1,80 @@
+<!-- <template>
+  <div class="cisco-app-tile">
+    <img class="cisco-app-tile__thumbnail-image" src={defaultAppLogo} alt="Avatar" />
+    <div
+      class="cisco-app-tile__header cisco-p-horizontal_xx-small cisco-p-vertical_xx-small cisco-m-top_xx-small cisco-m-horizontal_x-small">
+      <a onclick={handleOpenRecordClick} class="cisco-app-tile__title cisco-text-size_large">{app.app.Name}</a>
+      <span class="cisco-app-tile__subtitle_label cisco-m-top_x-small cisco-text-size_medium ">by </span>
+      <span class="cisco-app-tile__subtitle_link cisco-m-top_x-small cisco-text-size_medium "><a
+          href="">Cisco</a></span>
+    </div>
+
+    <div class="cisco-app-tile__body cisco-p-vertical_small cisco-m-horizontal_x-small">
+      <div class="cisco-app-tile__related-info cisco-text-size_medium cisco-m-top_small">
+        <template for:each={app.appFeatureList} for:item="feature">
+          <template if:true={app.isFreeOrPaidApp}>
+            <span key={feature.id}>{feature.FeatureType__c} | </span>
+          </template>
+        </template>
+        <span class="cisco-hide" if:true={app.SupportedLanguage__c}></span>
+        <span>{app.app.PublishDate__c} | </span>
+       
+
+        <span>Ratings {app.app.Number_Of_Ratings__c}</span>
+
+      </div>
+    </div>
+
+    <div class="cisco-show cisco-app-tile__footer cisco-p-vertical_small cisco-m-horizontal_x-small">
+      <button type="button">Demo</button>
+    </div>
+
+  </div>
+
+</template> -->
+
+<template>
+  
+  <div class="cisco-app-tile">
+
+    <template if:true={app.logoURL}>
+      <img class="cisco-app-tile__thumbnail-image" src={app.logoURL} alt="Avatar" />
+
+    </template>
+    <template if:false={app.logoURL}>
+      <img class="cisco-app-tile__thumbnail-image" src={appResources.appLogo} alt="Avatar" />
+
+    </template>
+
+    <div
+      class="cisco-app-tile__header cisco-p-horizontal_xx-small cisco-p-vertical_xx-small cisco-m-top_xx-small cisco-m-horizontal_x-small">
+      <a onclick={handleOpenRecordClick} class="cisco-app-tile__title cisco-text-size_large"
+        title={app.appTitle}>{app.appTitle}</a>
+      <span class="cisco-app-tile__subtitle_label cisco-m-top_x-small cisco-text-size_medium ">by </span>
+      <span class="cisco-app-tile__subtitle_link cisco-m-top_x-small cisco-text-size_medium "><a
+          href="">{app.publishedBy}</a></span>
+    </div>
+
+    <div class="cisco-app-tile__body cisco-p-vertical_small cisco-m-horizontal_x-small">
+      <article if:true={app.tagLine} title={app.tagLine}
+        class="cisco-app-tile__description cisco-text-size_medium cisco-text-size_medium cisco-m-horizontal_xx-small">
+        {app.tagLine} </article>
+      <div class="cisco-app-tile__related-info cisco-text-size_medium cisco-m-top_small">
+        <span class="cisco-hide" if:true={app.SupportedLanguage__c}></span>
+        <template for:each={app.pricing} for:item="price">
+          <span key={price}>{price} | </span>
+
+        </template>
+        <span>{app.publishedDate} | </span>
+
+
+        <span>Ratings {app.rating}</span>
+      </div>
+    </div>
+
+    <div class="cisco-show cisco-app-tile__footer cisco-p-vertical_small cisco-m-horizontal_x-small">
+      <button type="button">Demo</button>
+    </div>
+  </div>
+
+</template>
